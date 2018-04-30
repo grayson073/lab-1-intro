@@ -12,6 +12,24 @@
         <p>What's your favorite vacation spot?</p>
         <p>Do you travel often?</p>
         <script>
+            // find out first whether user is a robot or human
+            var userType = prompt('Are you a robot or a human?');
+            // log console so we can check response in dev tools
+            console.log('User\'s type is:', userType);
+            // alerts user, welcoming their chosen type
+            alert('Welcome to the class, ' + userType + '!');
+
+            // confirms whether or not user likes activities
+            var likesActivities = confirm('Do you like activities?');
+            // log console of likes activities result (true or false)
+            console.log('User likes activities:', likesActivities);
+            // alert message based on whether or not user likes activities
+            if(likesActivities) {
+                alert('Awesome, ' + userType + '! We like activities too!');
+            }
+            else{
+                alert('Boooo, ' + userType + '! You should get out more.');
+            }
             
         </script>
     </body>
