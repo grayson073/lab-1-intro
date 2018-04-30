@@ -9,7 +9,7 @@
         <br>
         <p>Are you a robot or a human?</p>
         <p>Where is your favorite vacation spot?</p>
-        <p>Who do you like to travel with the most?</p>
+        <p>What's the name of the person you love to travel with most?</p>
         <p>Do you like activities?</p>
         <script>
             //Question #1 - find out first whether user is a robot or human
@@ -24,15 +24,16 @@
             // log console so we can check response in dev tools
             console.log('User\'s favorite vacation spot is:', favoriteVacation);
             // alerts user using previous responses
-            alert('Nice choice, ' + userType + ', we love ' + favoriteVacation + 'too!');
+            alert('Nice choice, ' + userType + ', we love ' + favoriteVacation + ' too!');
             
             //Question #3 - find out who user likes to travel with
-            var userType = prompt('Are you a robot or a human?');
+            var travelsWith = prompt('What\'s the name of the person you love to travel with most, ' + userType + '?');
             // log console so we can check response in dev tools
-            console.log('User\'s type is:', userType);
+            console.log('User likes to travel with:', travelsWith);
             // alerts user, welcoming their chosen type
-            alert('Welcome to the class, ' + userType + '!');
+            alert('So you\'re a ' + userType + ' whose favorite vacation spot is ' + favoriteVacation + ' and you like to travel with ' + travelsWith + '? That\s pretty cool!');
 
+/*
             //Question #4 - confirms whether or not user likes activities
              var likesActivities = confirm('Do you like activities?');
             // log console of likes activities result (true or false)
@@ -45,7 +46,7 @@
                 alert('Boooo, ' + userType + '! You should get out more.');
             }
 
-
+*/
         </script>
     </body>
 </html>
