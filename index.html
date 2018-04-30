@@ -8,19 +8,33 @@
         <h4>Objective: Write a program that accepts user input and, based on that input, displays messages back to the user.</h4>
         <br>
         <p>Are you a robot or a human?</p>
+        <p>Where is your favorite vacation spot?</p>
+        <p>Who do you like to travel with the most?</p>
         <p>Do you like activities?</p>
-        <p>What's your favorite vacation spot?</p>
-        <p>Do you travel often?</p>
         <script>
-            // find out first whether user is a robot or human
+            //Question #1 - find out first whether user is a robot or human
+            var userType = prompt('Are you a robot or a human?');
+            // log console so we can check response in dev tools
+            console.log('User\'s type is:', userType);
+            // alerts user, welcoming their chosen type
+            alert('Welcome to our coding class, ' + userType + '!');
+
+            // Question #2 - find out user's favorite vacation spot
+            var favoriteVacation = prompt('Where is your favorite vacation spot, ' + userType + '?');
+            // log console so we can check response in dev tools
+            console.log('User\'s favorite vacation spot is:', favoriteVacation);
+            // alerts user using previous responses
+            alert('Nice choice, ' + userType + ', we love ' + favoriteVacation + 'too!');
+            
+            //Question #3 - find out who user likes to travel with
             var userType = prompt('Are you a robot or a human?');
             // log console so we can check response in dev tools
             console.log('User\'s type is:', userType);
             // alerts user, welcoming their chosen type
             alert('Welcome to the class, ' + userType + '!');
 
-            // confirms whether or not user likes activities
-            var likesActivities = confirm('Do you like activities?');
+            //Question #4 - confirms whether or not user likes activities
+             var likesActivities = confirm('Do you like activities?');
             // log console of likes activities result (true or false)
             console.log('User likes activities:', likesActivities);
             // alert message based on whether or not user likes activities
@@ -30,7 +44,8 @@
             else{
                 alert('Boooo, ' + userType + '! You should get out more.');
             }
-            
+
+
         </script>
     </body>
 </html>
