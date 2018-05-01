@@ -30,14 +30,14 @@
             var travelsWith = prompt('What\'s the name of the person you love to travel with most, ' + userType + '?');
             // log console so we can check response in dev tools
             console.log('User likes to travel with:', travelsWith);
-            // alerts user, welcoming their chosen type
+            // alerts user, using previous responses
             alert('So you\'re a ' + userType + ' whose favorite vacation spot is ' + favoriteVacation + ' and you like to travel with ' + travelsWith + '? That\s pretty cool!');
 
             //Question #4 - confirms whether or not user likes activities
              var likesActivities = confirm('Do you like activities?');
             // log console of likes activities result (true or false)
             console.log('User likes activities:', likesActivities);
-            // alert message based on whether or not user likes activities
+            // alert message based on whether or not user likes activities, using previous responses
             if(likesActivities) {
                 alert('Awesome, ' + userType + '! Activities are the best, especially when you are visiting ' + favoriteVacation + ' with ' + travelsWith + '!');
             }
